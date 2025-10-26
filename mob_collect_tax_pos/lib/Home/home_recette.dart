@@ -240,9 +240,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       margin: const EdgeInsets.symmetric(
                           vertical: 8, horizontal: 10),
                       child: ListTile(
-                        title: Text(_posts[index]['colProprietaire_Ese']),
+                        title: Text(_posts[index]['noms']),
                         subtitle: Text(
-                            '${_posts[index]['categorietaxe']}\nMontant : ${_posts[index]['montant_total']}\nQuotité: ${_posts[index]['montant_quotite']}\nà Récouvrer: ${_posts[index]['recouvrement']}\nMois: ${_posts[index]['name_mois']}\nAnnée:${_posts[index]['name_annee']}\nDate:${_posts[index]['dateOperation']}\n'),
+                            '${_posts[index]['codeFacture']}\nMontant : ${_posts[index]['RestePaie']} USD\nDateVente: ${_posts[index]['dateVente']}\n Statut: ${_posts[index]['livraison']}\n'),
                         trailing: IconButton(
                           icon: Icon(Icons.print),
                           color: MyColors.primaryColor,
